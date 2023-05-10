@@ -1,0 +1,38 @@
+Cars
+_________________________
+
+id                                  INT - UNSIGNED - PRIMARY_KEY(UNIQUE - NOT NULL) - AUTO_INCREMENT
+plate                               VARCHAR(7) - UNIQUE - NOT NULL
+frame_number                        VARCHAR(17) - UNIQUE
+brand                               VARCHAR(30) - NOT NULL
+model                               VARCHAR(30) - NOT NULL
+price                               DECIMAL(8, 2) - NOT NULL
+enrollment_year                     YEAR - NOT NULL
+number_of_owners                    TINYINT
+type_of_car                         VARCHAR(30)
+poster                              TEXT - DEFAULT("/assets/img/default_poster.jpg") - NOT NULL
+exterior_color                      VARCHAR(20) - NOT NULL
+interior_color                      VARCHAR(20)
+drivetrain                          VARCHAR(20)
+fuel_type                           VARCHAR(15) - NOT NULL
+transmission                        VARCHAR(15) - NOT NULL
+engine                              VARCHAR(40)
+mileage                             MEDIUMINT - NOT NULL
+digital_entertainment               TINYINT - DEFAULT(1)
+winter_wheels                       TINYINT - DEFAULT(1)
+airbag                              TINYINT - DEFAULT(1) - NOT NULL
+air_conditioning                    TINYINT - DEFAULT(1)
+seats_number                        TINYINT
+wheel_rim                           VARCHAR(20)
+last_car_review                     TIMESTAMP (YYYY-MM)
+doors                               TINYINT
+height                              TINYINT
+super_car_tax                       TINYINT - DEFAULT(1)
+power_to_weight_ratio               VARCHAR(20) - NOT NULL   
+horsepower                          VARCHAR(15) - NOT NULL
+emission_class                      VARCHAR(20) - NOT NULL
+cruise_control                      TINYINT - DEFAULT(1)
+parking sensors                     TINYINT - DEFAULT(1)    
+hill_holder                         TINYINT - DEFAULT(1)
+max_mileage_full_fuel               SMALLINT
+for_new_drivers                     TINYINT - DEFAULT(1)
